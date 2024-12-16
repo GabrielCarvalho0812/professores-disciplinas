@@ -24,7 +24,8 @@ public class CrudDisciplinaService {
         boolean istrue = true;
 
         while (istrue){
-            System.out.println("\nqual acão voce quer executar");
+            System.out.println("QUAL AÇÃO VOCE DESEJA EXECUTAR");
+            System.out.println();
             System.out.println("0 - voltar ao menu anterior");
             System.out.println("1 - cadastrar nova disciplina");
             System.out.println("2 - atualizar uma Disciplina");

@@ -31,13 +31,17 @@ public class Api_Professores implements CommandLineRunner {
 
         while (istrue){  //enquanto is true for verdadeiro
             System.out.println("qual entidade voce deseja interagir?");
-            System.out.println("0 - sair");
+            System.out.println("0 - parar a aplicação");
             System.out.println("1 - professor");
             System.out.println("2 - Disciplina");
 
             int opcao = scanner.nextInt();
 
             switch (opcao){
+                case 0:
+                    System.out.println();
+                    System.out.println("DESENVOLVIDO POR GABRIEL CARVALHO ABRAÇOS!!");
+                    System.exit(0);
                 case 1 :
                     this.professorService.menu(scanner);
                     break;

@@ -10,8 +10,13 @@ public class Professor {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
     @Column(nullable = false)
     private String nome;
+
+    @Column(nullable = false)
+    private long idade;
+
 
 
     @OneToMany(mappedBy = "professor",cascade = CascadeType.ALL)
@@ -36,6 +41,14 @@ public class Professor {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public long getIdade() {
+        return idade;
+    }
+
+    public void setIdade(long idade) {
+        this.idade = idade;
     }
 
     @Override

@@ -20,7 +20,8 @@ public class CrudProfessorService {
         boolean istrue = true;
 
         while (istrue) {
-            System.out.println("qual acão voce quer executar");
+            System.out.println("QUAL AÇÃO VOÇE DESEJA EXECUTAR");
+            System.out.println();
             System.out.println("0 - voltar ao menu anterior");
             System.out.println("1 - cadastrar novo professor");
             System.out.println("2 - atualizar um professor");
@@ -59,11 +60,15 @@ public class CrudProfessorService {
     private void cadastrar(Scanner scanner) {
         System.out.print("digite o nome do professor");
         String nome = scanner.next();
+        System.out.println();
+
+
 
         Professor professor = new Professor(nome);
 
         this.professorRepository.save(professor);
-        System.out.println("professor cadastrado com sucesso");
+        System.out.println("professor cadastrado com sucesso !!");
+        System.out.println();
 
     }
 
@@ -96,6 +101,7 @@ public class CrudProfessorService {
             System.out.println(professor);
         }
         System.out.println();
+
     }
 
 
@@ -107,11 +113,11 @@ public class CrudProfessorService {
 
         if (optional.isPresent()) {
             this.professorRepository.deleteById(id);
-            System.out.println("professor deletado\n");
+            System.out.println("professor deletado com sucesso !!\n");
             System.out.println();
         }
         else {
-            System.out.println("o id a ser deletado não exite");
+            System.out.println("o id a ser deletado não exite !!");
         }
     }
 }
