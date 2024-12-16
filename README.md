@@ -17,6 +17,7 @@
 - Java 17 ou superior
 - JDK instalado
 - Maven 
+- Git
 
 
 ## Passos para Rodar o Projeto
