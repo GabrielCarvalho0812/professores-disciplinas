@@ -60,7 +60,7 @@ public class CrudDisciplinaService {
     }
 
 
-    private void cadastrar(Scanner scanner){
+    public void cadastrar(Scanner scanner){
         System.out.println("Nome da Disciplina: ");
         String nome = scanner.next();
 
@@ -81,7 +81,7 @@ public class CrudDisciplinaService {
         }
     }
 
-    private void atualizar(Scanner scanner) {
+    public void atualizar(Scanner scanner) {
         System.out.println("digite o ID da disciplina para ser atualizado: ");
         long id = scanner.nextLong();
 
@@ -119,7 +119,7 @@ public class CrudDisciplinaService {
         }
     }
 
-    private void visualizar(){
+    public void visualizar(){
         Iterable<Disciplina> disciplinas = this.disciplinaRepository.findAll();
         for (Disciplina disciplina : disciplinas){
             System.out.println(disciplina);
@@ -127,7 +127,7 @@ public class CrudDisciplinaService {
         System.out.println();
     }
 
-    private void deletar(Scanner scanner){
+    public void deletar(Scanner scanner){
         System.out.println("id:");
         long id = scanner.nextLong();
 

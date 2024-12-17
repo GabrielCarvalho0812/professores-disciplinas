@@ -57,7 +57,7 @@ public class CrudProfessorService {
     }
 
 
-    private void cadastrar(Scanner scanner) {
+    public void cadastrar(Scanner scanner) {
         System.out.print("digite o nome do professor");
         String nome = scanner.next();
         System.out.println();
@@ -73,7 +73,7 @@ public class CrudProfessorService {
     }
 
 
-    private void autualizar(Scanner scanner) {
+    public void autualizar(Scanner scanner) {
         System.out.println("Digite o ID do Professor a ser autualizado:");
         Long id = scanner.nextLong();
 
@@ -94,7 +94,7 @@ public class CrudProfessorService {
         }
     }
 
-    private void visualizar() {
+    public void visualizar() {
         Iterable<Professor> professores = this.professorRepository.findAll();
 
         for (Professor professor : professores) {
@@ -105,7 +105,7 @@ public class CrudProfessorService {
     }
 
 
-    private void deletar(Scanner scanner) {
+    public void deletar(Scanner scanner) {
         System.out.println("Digite o id do professor a ser deletado");
         long id = scanner.nextLong();
 
