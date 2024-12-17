@@ -1,4 +1,4 @@
-## FUNCIONALIDADES PRINCIPAIS DA (API-PROFESSORES-DISCIPLINAS)
+## FUNCIONALIDADES PRINCIPAIS DA (PROFESSORES-DISCIPLINAS)
 
 1. Professores: Cadastro, atualização e remoção de informações sobre os o professor
 2. Disciplinas: Cadastro, atualização e remoção de informações sobre a Disciplina
