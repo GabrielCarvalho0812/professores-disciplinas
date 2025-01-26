@@ -27,7 +27,6 @@
 - dentro da pasta api-prof-disc execute o comando: git clone https://github.com/GabrielCarvalho0812/api-professores-disciplinas.git
 - Após clonar o Projeto execute o comando : mvn spring-boot:run
 - Após rodar interaja no terminal depois acesse no browser http://localhost:8080/h2-console
-  
 - User Name do banco: teste
 - Password do banco: 12345
 - O banco de dados será perdido após o encerramento da aplicação.(h2Databese)
