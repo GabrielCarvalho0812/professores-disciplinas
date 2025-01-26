@@ -75,9 +75,9 @@ public class CrudDisciplinaService {
             Professor professor = optional.get();
             Disciplina disciplina =  new Disciplina(nome,semestre,professor);
             disciplinaRepository.save(disciplina);
-            System.out.println("\n disciplina cadastrada");
+            System.out.println("\n disciplina cadastrada " + disciplina);
         }else {
-            System.out.println("professor id " + professorid + "invalido");
+            System.out.println("professor id 1invalido");
         }
     }
 

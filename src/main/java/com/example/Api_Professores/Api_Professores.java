@@ -40,7 +40,7 @@ public class Api_Professores implements CommandLineRunner {
             switch (opcao){
                 case 0:
                     System.out.println();
-                    System.out.println("DESENVOLVIDO POR GABRIEL CARVALHO ABRAÇOS!!");
+                    System.out.println("DESENVOLVIDO POR GABRIEL CARVALHO ABRAÇOS!!1");
                     System.exit(0);
                 case 1 :
                     this.professorService.menu(scanner);

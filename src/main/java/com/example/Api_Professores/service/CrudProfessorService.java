@@ -67,7 +67,7 @@ public class CrudProfessorService {
         Professor professor = new Professor(nome);
 
         this.professorRepository.save(professor);
-        System.out.println("professor cadastrado com sucesso !!");
+        System.out.println("professor cadastrado com sucesso !!"  + professor);
         System.out.println();
 
     }
@@ -85,7 +85,6 @@ public class CrudProfessorService {
             String nome = scanner.next();
 
             Professor professor = optional.get();
-            professor.setNome(nome);
             professorRepository.save(professor);
             System.out.println("Professor autualizado com sucesso!!!\n");
 
