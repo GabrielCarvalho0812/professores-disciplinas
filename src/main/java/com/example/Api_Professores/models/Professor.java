@@ -3,6 +3,7 @@ package com.example.Api_Professores.models;
 import jakarta.persistence.*;
 
 import java.util.List;
+import java.util.Scanner;
 
 @Entity
 @Table(name = "Professores")
@@ -23,15 +24,12 @@ public class Professor {
     private List<Disciplina> disciplinas;
 
 
-    public Professor() {
-    }
-
     public Professor(String nome) {
         this.nome = nome;
     }
 
-    public long getId() {
-        return id;
+    public Professor() {
+
     }
 
 
@@ -39,8 +37,9 @@ public class Professor {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public Scanner setNome(String nome) {
         this.nome = nome;
+        return null;
     }
 
     public long getIdade() {
@@ -58,4 +57,6 @@ public class Professor {
                 ", nome='" + nome + '\'' +
                 '}';
     }
+
+
 }
